@@ -1,0 +1,834 @@
+.navbar { 
+    background-color: transparent;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 20;
+    transition: background-color 0.5s ease;
+}
+
+.navbar.scrolled {background-color: white;}
+
+.navbar-toggler {
+    position:absolute;
+    right: var(--size-20);
+    top: var(--size-10);
+    outline: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+
+.navbar-toggler span {
+    color: var(--blue);
+    font-size: var(--size-20);
+    cursor: pointer;
+    pointer-events: none;
+}
+
+[aria-controls= "navbarDropdown" ] {
+    display: none;
+}
+
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    /* columns: repeat (auto-fit, min-max(250px, 1)); */
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+}    
+
+.brand {
+    max-width: 12%;
+    margin-right: auto;
+    font-size: 2rem;
+    font-weight: 700;
+    width: 100%;
+    transition: ease-in-out 0.3s;
+    color: var(--gry);
+}
+
+.nav-link a {
+    color: var(--gry);
+    font-size: .8125rem;
+    font-weight: 600;
+    margin-right: 2.5rem;
+    line-height: 1.25rem;
+}
+
+.nav-link .btn.btn-blue:hover {color: var(--blue);}
+
+.nav-link a:hover { color: var(--font-color-link);}
+
+.nav-link .btn.btn-blue {
+    color: var(--white);
+}
+
+/* .fa-solid.fa-circle-play:hover {color: var(--blue);} */
+
+
+.section1 {
+    margin-top: 0;
+    padding-top: 200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    align-items: center;
+}
+
+.block h1 {
+    color: var(--blk);
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.block h5 { font: 15px;}
+    
+
+.container.custombg {
+    background-image: url(../saas-project-assets/saas-project-assets/backgrounds/background-top.svg);
+    width: fit-content;
+}
+
+.learn{ 
+    margin-left: 15px;
+    font-weight: 700;
+    color: var(--blue);
+}
+.icon img {
+    display: grid;
+    width:75px;
+    height: 75px;
+    border-radius: var(--size-50);
+    box-shadow: 0px 10px 20px rgba(99, 98, 98, 0.315); 
+    background-size:cover;
+ }
+
+ .picblock {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 3fr));
+    gap: 50px;
+}
+
+.icon {
+    width: 75px;
+    height: 75px;
+    border-radius: var(--size-50);
+    box-shadow: 0px 10px 20px rgba(99, 98, 98, 0.315);
+    background-color: var(--white);
+}
+.icon1, .icon6 {
+    background-size: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.icon2, .icon3,
+.icon4, .icon5, .icon7 {
+    background-size: 70px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.icon1 {
+    background-image: url(../saas-project-assets/saas-project-assets/logo_icons/paypal.jpg);
+    margin-left: 100px;}
+
+.icon2 {   
+    background-image: url(../saas-project-assets/saas-project-assets/logo_icons/weave.png); 
+    width: 100px;
+    height: 100px;  
+}
+
+.icon2 img {
+    width: 100px;
+    height: 100px;  
+}
+
+.icon3 {
+    background-image: url(../saas-project-assets/saas-project-assets/logo_icons/google.png);
+    width: 100px;
+    height: 100px;  
+    margin-left: 40px;
+    
+}   
+ 
+.icon3 img {
+    width: 100px;
+    height: 100px;  
+}
+
+
+.icon4 {
+    background-image: url(../saas-project-assets/saas-project-assets/logo_icons/google-A.png);
+    width: 100px;
+    height: 100px;  
+    margin-left: 70px;
+}
+
+.icon4 img {
+    width: 100px;
+    height: 100px;  
+}
+
+.icon5  {
+    background-image: url(../saas-project-assets/saas-project-assets/logo_icons/asana.png);
+    width: 100px;
+    height: 100px;  
+    margin-left: 70px;
+}
+
+.icon5 img {
+    width: 100px;
+    height: 100px;  
+}
+
+.icon6 {
+    background-image: url(../saas-project-assets/saas-project-assets/logo_icons/atlassian.png);
+    grid-column: span 2 / 3;
+    margin-left: 170px;
+}
+
+.icon7 {
+    background-image: url(../saas-project-assets/saas-project-assets/logo_icons/calendar.png);
+    margin-top:50px;
+    width: 100px;
+    height: 100px;  
+}
+
+.icon7 img {
+    width: 100px;
+    height: 100px;  
+}
+
+.icon1 {
+    animation: bounce 2s infinite;
+}
+
+.icon2 {
+    animation: spin 3s infinite;
+}
+
+.icon3 {
+    animation: fade 1.5s infinite;
+}
+
+.icon4 {
+    animation: shake 0.5s infinite;
+}
+
+.icon5 {
+    animation: slide 4s infinite;
+}
+
+.icon6 {
+    animation: pulse 2s infinite;
+}
+
+.icon7 {
+    animation: rotate 3s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fade {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-10px);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+    75% {
+        transform: translateX(-10px);
+    }
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.benefits { 
+    display: block;
+    text-align: center;
+    padding-top: 70px;
+    text-align: center;
+}
+
+.section2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: var(--size-50);
+    padding: var(--size-150) var(--size-10);
+    justify-items: center; 
+}
+
+.Services {
+    background-color: white;
+   box-shadow: 0 30px 48px rgba(48, 63, 100, .15);
+    padding: var(--size-30);
+    /* width: 300px; */
+    margin-bottom:var(--size-100)s ;
+}
+
+.Services span {
+    display: block;
+    width: 4.375rem;;
+    height:4.375rem;
+    margin-right: var(--size-10);
+    margin-left: var(--size-10);
+    margin-top: var(--size-10);
+}
+
+.specialservice {
+    display: flex;
+    justify-content: space-between;
+}
+
+.o {background: url(../saas-project-assets/saas-project-assets/icons/responsive.svg);}
+
+.o2 {background: url(../saas-project-assets/saas-project-assets/icons/customizable.svg);}
+
+.o3 {background: url(../saas-project-assets/saas-project-assets/icons/premium.svg);}
+
+.o4 {background: url(../saas-project-assets/saas-project-assets/icons/documentation.svg);}
+
+.section3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    margin: 0 20px;
+}
+
+
+.blocktext {
+    padding: 40px 0 0;
+    margin-left: 10px;
+}
+
+.blocktext h2 {
+    margin-right: 200px;
+    line-height: 1.5;
+}
+
+.blocktext {font-weight: 600;}
+
+.whyfront {
+    padding-top: var(--size-50);
+    text-align: center;
+}
+
+.whyfront h2 {font-weight: 700;}
+
+.progress-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 50px auto;
+}
+
+.progress-step {
+    text-align: center;
+    position: relative;
+    flex: 1;
+}
+
+.progress-step:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -50%;
+    width: 100%;
+    height: 2px;
+    background-color: #e0e0e0;
+    z-index: -1;
+}
+
+.progress-circle {
+    width: 40px;
+    height: 40px;
+    background-color: #e0f7fa;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 54px auto 10px;
+}
+
+.progress-circle .dot {
+    width: 10px;
+    height: 10px;
+    background-color: #1e88e5;
+    border-radius: 50%;
+}
+
+.progress-label {
+    font-weight: 600;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #000;
+}
+
+.videobg {position: relative;}
+
+.video-btn {
+    width: 125px;
+    height: 125px;
+    background-color: var(--white);
+    position: absolute;
+    top: 50%;
+    left: 50%;  
+    transform: translate(-50%, -50%);
+    box-shadow: 0 10px 20px rgba(96, 96, 97, 0.46);
+    border-radius: 50%;
+}
+
+.video-btn:hover {background-color: rgba(186, 179, 179, 0.151);}
+
+.video-btn i {
+    width: var(--size-100);
+    height: var(--size-100);
+}
+
+
+.container.videobg {padding-top: var(--size-100);}
+
+.container.employ{padding-top: var(--size-100);}
+
+.employeetest {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.pic1 {
+    position: relative;
+    margin-left: 70px;
+    width: 100%;
+    max-width: 70%;
+    z-index: 2;
+}
+
+.abstractpic { max-height: 600px;}
+
+img.abstractbg {
+    max-width: 30%;
+    position: relative;
+    bottom: 282px;
+    left: 20px;
+}
+
+.testiomial {
+    align-content: center;
+    margin-right: 70px;
+}
+
+.hub {
+    width: 100%;
+    max-width: 30%;
+}
+
+.hubchat h4 { 
+    color: var(--blk);
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.hubchat h5 {
+    color: var(--blk);
+    font-size: var(--size-16);
+    margin-bottom: 5px;
+}
+
+.hubchat h6 { 
+    font-size: 13px;
+    margin-top: 5px;
+    font-weight: 600;
+}
+.trustheader {
+    margin-top: 100px;
+    text-align: center;
+    color: var(--gry);
+    padding: var(--size-30);
+}
+
+.companylist {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    justify-items: center;
+}
+
+.company img {
+    max-width: 150px;
+    height: 75px;
+}
+.pricing {
+    text-align: center;
+    margin: var(--size-100) 0;
+
+}
+
+.pricebox {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    gap: 30px; 
+    margin-bottom: var(--size-100); 
+
+}
+
+.feature:hover { 
+    box-shadow: 0 10px 20px rgba(96, 96, 97, 0.46);
+    transition: ease-in-out .5s;
+}
+
+.feature{
+    grid-row: 1/3;
+    
+    width: 300px;
+    padding: 30px;
+}
+
+.feature h4 {
+    font-weight: 600;
+    padding: 25px 0;
+}
+
+.feature h6 {font-weight: 500;}
+
+.price {
+    display: flex;
+    align-items: baseline;
+}
+
+.pricecards:hover {  
+    box-shadow: 0 10px 20px rgba(96, 96, 97, 0.46);
+    transition: ease-in-out .5s;
+}
+
+.pricecards {
+    padding: 5px;
+    max-width: 360px;   
+}
+
+.pricecards span {
+    display: block;
+    width: 4.375rem;;
+    height:4.375rem;
+    margin-right: var(--size-10);
+    margin-left: var(--size-10);
+    margin-top: var(--size-10);
+}
+
+.o6 {background-image: url(../saas-project-assets/saas-project-assets/icons/components.svg);}
+.o7 {background-image: url(../saas-project-assets/saas-project-assets/icons/images.svg);}
+.o8 {background-image: url(../saas-project-assets/saas-project-assets/icons/cancel.svg) ;}
+.o9 {background-image: url(../saas-project-assets/saas-project-assets/icons/moneyback.svg);}
+
+.price h1 {
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.price h4 {font-size: 20px;}
+
+.cancle-btn {    
+    display: flex;
+    justify-content: flex-start;
+}   
+.cancle-btn a{ margin-left: 30px;}
+
+.background-dark {background-color: #20335b;}
+
+.hirecon{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 40px;
+    align-items: center;
+    justify-items: center;
+}
+
+.hire-us {width: 400px;}
+
+.hire-us hr{
+    width: 200px;
+    display: inline-block;
+}
+
+.hire-us h2 {color: var(--white);}
+.hire-us h3 {
+    color: var(--white);
+    margin: 5px 0;
+}
+
+.hire-us h4 {
+    color: var(--lghtgry);
+    font-weight: 500;
+}
+
+.hire-us h5 {
+    color: var(--lghtgry);
+    font-size: 15px;
+    font-weight: 500;
+    margin: 5px 0;
+}
+
+.hire-us p{
+    font-size: 17px;
+    font-weight: 500;
+    margin-top: 30px;
+    color: var(--white);
+}
+
+.ppl1 {width:fit-content}
+
+.ppl1 {
+    background-image: url(../saas-project-assets/saas-project-assets/people/woman_one.jpg);
+    background-size:cover;
+}
+.ppl2 {
+    background-image: url(../saas-project-assets/saas-project-assets/people/woman_two.jpg);
+    background-size:cover;
+}
+.ppl3 { 
+    background-image: url(../saas-project-assets/saas-project-assets/people/man_one.jpg);
+    background-size:cover;
+}
+
+.hireppl {
+    display: flex;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.hireppl .ppl1,
+.hireppl .ppl2 {
+    display: block;
+    width: 4.375rem;;
+    height:4.375rem;
+    background-color: green;
+    border-radius: var(--size-50);
+    margin-right: var(--size-10);
+    margin-left: var(--size-10);
+    margin-top: var(--size-10);
+}
+
+.hireppl .ppl3 {
+    display: block;
+    width: 6.375rem;;
+    height:6.375rem;
+    background-color: green;
+    border-radius: var(--size-50); 
+    margin-right: var(--size-10);
+    margin-left: var(--size-10);
+    margin-top: var(--size-10);
+}
+form { 
+    text-align: center;
+    max-width: 500px;
+    margin: 0 20px;
+}
+
+.hireform {
+    margin: 50px 0;
+    background-color: var(--white);
+    border-radius: 10px;
+}
+
+input {width: 194px;}
+select {width: 200px;}
+
+textarea {
+    width: 430px;
+    height: 155px;
+    border-radius: 5px;
+    margin: 10px 0;
+    color: var(--gry);
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+}
+
+
+input.checkbox {
+    width: 19px;
+}
+
+input span {
+    margin-right: 50px;
+}
+
+#firstname, #lastname {
+    font-family: 'Open Sans';
+    font-weight: 600;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px;
+    margin: 10px;
+    color: var(--gry);
+} 
+
+select { 
+    font-size: 14px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    position: relative;
+    bottom: 6px;
+    width: 206px;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.privacycheck {width: 479px;}
+
+.privacycheck span {
+    font-weight: 500;
+    font-size: 16px;    
+}
+
+a.privacygrey:hover { color: var(--blue);}
+
+a.privacygrey {
+    font-weight: 600;
+    padding: 20px;
+    color: var(--grey);
+    font-size: 16px;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;    
+}
+
+a.privacyblue:hover {color: var(--grey);}
+
+a.privacyblue {
+    font-weight: 600;
+    padding: 20px;
+    color: var(--blue);
+    font-size: 16px;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+}
+
+form a.btn.btn-blue {margin: 25px;}
+
+footer {margin: 75px 20px;}
+
+.compcontact {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    justify-items: center;
+}
+
+.compcontact a:hover { color: var(--blue);}
+
+
+.compcontact a {
+    font-weight: 500;
+    color: var(--gry);
+    font-size: 15px;
+    line-height: 2;
+}
+
+a.footer.btn.btn-blue {
+    color: var(--white);
+    margin-left: 15px;
+    padding: 0px 4px;
+    border-radius: 5px;
+    font-size: 10px;
+}
+
+.frontcontact img {
+    margin-bottom: 20px;
+    width: 50%;
+}
+
+.p_p {display: flex;}
+
+.policy_social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fa-brands {
+    color: var(--gry);
+    font-weight: 100;
+    font-size: 29px;
+    margin:  50px 12px;
+}
+
+select#countryselect option { text-align: center;}
+
+.copyrights {
+    font-size: 15px;
+    text-align: center;
+    margin: 0 240px;
+}
+
+.copyrights :nth-child(1) {line-height: 4;}
+
+.p_p h5 {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.p_p h5:hover {color: var(--blue);}

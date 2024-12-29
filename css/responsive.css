@@ -1,0 +1,516 @@
+@media screen and (max-width: 768px) { 
+    [aria-controls="navbarDropdown"] {
+        display: block;
+        
+    }
+    
+    [aria-expanded="false"] ~ ul {
+        display: none;
+    }
+    
+    [aria-expanded="true"] ~ ul {
+        position:absolute;
+        right:0;
+        top:var(--size-50);
+        width: 100%;
+        justify-content: space-evenly;
+        margin: 35px 0;
+        background-color: white;
+        padding: 30px 0;
+    }
+
+    [aria-expanded="true"]~ ul li a {
+        margin-right: var(--size-20);   
+        color: var(--gry);  
+    }
+
+    .navbar {
+        width: 768px;
+    }
+
+    .navbar-nav {
+        flex-wrap: wrap;
+        column-gap: 70px;
+    }
+
+    .navbar-toggler span {
+        color: var(--gry);
+        font-size: 40px;
+    }
+
+
+    .nav-link .btn.btn-blue {
+        white-space: nowrap;
+        margin: 45px 0;
+    }
+
+    .brand {
+        max-width: 30%;
+        margin: 0 15px;
+    }
+
+    .container {
+
+        width: 768px;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .container.section3 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        margin: 0 20px;
+    }
+
+    .section1 {
+        gap: 25px;
+        margin-top: 0;
+        padding-top: 200px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(600px, 0fr));
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    .block, .picblock {
+        margin-bottom: 20px;
+        height: 400px;
+    }
+
+    .picblock { 
+        position: relative; 
+        display: grid;
+        gap: 0px;
+    }
+
+    .block {
+        margin: 0 70px;
+        text-align: center;
+    }
+
+    .section2 {
+        gap: 25px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 25px;
+        padding: 50px 10px;
+    }
+
+    .icon {
+        width: 45px;
+        height: 45px;
+        border-radius: var(--size-50);
+        box-shadow: 0px 10px 20px rgba(99, 98, 98, 0.315);
+    }
+
+    .icon img {
+        display: grid;
+        width:45px;
+        height: 45px;
+        border-radius: var(--size-50);
+        box-shadow: 0px 10px 20px rgba(99, 98, 98, 0.315);
+    }
+
+    .icon2 { margin-left: 30px;}
+
+    .icon3 { margin-top: 100px;}
+
+    .icon2, .icon3,
+    .icon4, .icon5, .icon7 {
+        width: 75px;
+        height: 75px;
+        background-size: 50px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .icon1, .icon6 {
+        width: 45px;
+        background-size: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 45px;
+    }
+
+    .section3 { display: block;}
+
+    .blocktext { 
+        text-align: center;
+        margin: 50px 20px;
+    }
+    .blocktext h2 { 
+        margin: 30px 0;
+    }
+
+    .whyfront {  margin: 0 15px;}
+
+    .employeetest {
+        display: grid;  
+        grid-template-columns: 1fr;
+    }
+
+    .pic1 {
+        position: relative;
+        margin: 0 190px;
+        width: 50%;
+        max-width: 50%;
+        z-index: 2;
+    }
+
+    img.abstractbg {
+        bottom: 367px;
+        left: 125px;
+        max-width: 30%;
+    }
+
+    .testiomial {
+        text-align: center;
+        margin: 40px 20px;
+    }
+
+    .trustheader {
+        margin-top: 50px;
+    }    
+
+    .company img {
+        max-width: 100px;
+        height: 75px;
+    }
+    .feature {
+        grid-column: 1 / 3;
+        width: 600px;
+        text-align: center;
+    }
+
+
+    .price {
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+    }
+
+    .pricebox {
+        margin: 50px;
+        justify-items: center;
+    }
+
+
+    .background-dark {width: 768px}
+
+    .hirecon {grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));}
+
+
+    .hireform {
+        width: 700px;
+    }
+
+    .hire-us {
+        width: 700px;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .hire-us hr {
+        width: 380px;
+    }
+
+    .hire-us .span1 {
+        float: right;
+        position: relative;
+        bottom: 24px;
+        right: 99px;
+    }
+
+    select {width: 288px;}
+
+    form { max-width: 700px;}
+
+    input {width: 277px;}
+
+    textarea {width: 596px;}
+
+    .privacycheck {
+        width: 650px;
+    }
+
+    .compcontact {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        width: 700px;
+        justify-items: end;
+        margin: 0 20px;
+    }
+
+    .frontcontact {
+        grid-row: span 2/3;
+        width: 240px;
+    }
+
+    .socialmedia .countryselect {
+        width: 150px;
+        height: 30px;
+        position: relative;
+        top: 0px;
+    }
+
+    .policy_social {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 20px;
+    }
+
+    .copyrights {
+        margin: 0px 40px;
+    }
+
+    .socialmedia { 
+        display: flex;
+        align-items: center;
+
+
+    }
+
+}
+
+@media screen and ( max-width:480px) {
+
+    .container { max-width: 480px;}
+
+    [aria-expanded="true"] ~ ul {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: var(--size-50);
+        background-image: linear-gradient(270deg, #fffefe42, transparent);
+        width: 100%;
+        text-align: center;
+        line-height: 5;
+        background-color: white;
+        margin-top: 65px;
+        padding: 40px 0;
+        box-shadow: none;
+    }
+
+    [aria-expanded="true"]~ ul li a {
+        margin-right: 0;   
+        color: var(--gry);  
+    }
+
+   
+
+    .nav-link a {
+        margin-right: 0;
+    }
+
+    .navbar {
+        width: 480px;
+        margin: 0;
+    }
+
+    .navbar-toggler {
+        margin-top: 20px;
+    }
+
+    .navbar-toggler span {
+        color: var(--gry);
+        font-size: var(--size-50);
+        cursor: pointer;
+        pointer-events: none;
+        margin-right: 20px;
+    }
+
+    .brand {
+        margin-left: 20px;
+        max-width: 55%;
+        margin-top: 20px;
+    }
+
+    .section1 { grid-template-columns: repeat(auto-fit, minmax(450px, 0fr));}
+
+    .block { margin: 0;}
+
+    .icon {
+        width: 75px;
+        height: 75px;
+    }  
+
+    .icon2, .icon3, .icon4, .icon5, .icon7 {
+        background-size: 50px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .icon1, .icon6 {
+        width: 45px;
+        background-size: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 45px;
+    }
+
+    .section2 { padding: var(--size-50) var(--size-10);}
+
+    .specialservice { 
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .whyfront h4 { margin: 0 50px;}
+
+    .progress-container {
+        gap: 20px;
+        display: flex;
+        align-items: flex-start;
+        width: 90%;
+        margin: 50px auto;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .progress-label {
+        position: relative;
+        bottom: 30px;
+        left: 60px;
+        margin-top: 0;
+    }   
+    
+    .progress-circle {
+        width: 40px;
+        height: 40px;
+        background-color: #e0f7fa;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    } 
+
+    .progress-step:not(:last-child)::after {display: none;}
+
+    .video-btn {
+        width: 75PX;
+        height: 75px;
+        background-color: var(--white);
+        position: absolute;
+        top: 66%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0 10px 20px rgba(96, 96, 97, 0.46);
+        border-radius: 50%;
+    }
+
+    .container.videobg {
+        padding-top: var(--size-50);
+    }
+
+    .fa-solid.fa-play {
+        font-size: 24px;
+        color: var(--blk);
+        position: absolute;
+        top: 35%;
+        left: 42%;
+    }
+
+    .pic1 {
+        z-index: 2;
+        margin: 0 60px;
+        right: 60px;
+        left: 60px;
+    }
+
+    .abstractpic { max-height: 400px;}
+    
+    img.abstractbg {
+        bottom: 225px;
+        left: 80px;
+        max-width: 30%;
+        position: relative;
+    }
+
+    .trustheader {
+        margin-top: 20px;
+    }
+
+    .companylist {  
+        display: block;
+        justify-items: center;
+    }
+
+
+    .pricebox { display: block;}
+
+    .feature {
+        width: 340px;
+        margin-bottom: 100px;
+    }
+
+    .background-dark { width: 480px;}
+
+    .hirecon {
+        grid-template-columns: 1fr;
+    }
+
+    .hireppl { justify-content: space-between;}
+
+    .hire-us {
+        display: block;
+        width: 420px;
+        text-align: center;
+    }
+
+    .hire-us hr { width: 420px;}
+
+    .hireform {
+        width: 360px;
+        margin: 50px 0;
+        }
+
+    .privacycheck {
+    width: 320px;
+    }
+
+    textarea {
+        width: 320px;
+    }
+
+     a.privacyblue {
+        display: none;
+    }
+
+    .compcontact {
+         width: 420px;
+        justify-items: center;
+        text-align: center;
+        display: block;
+        margin: 60px 30px;
+    }
+
+    .p_p {
+        display: flex;
+        justify-content: center;
+    }
+
+    .policy_social {
+        text-align: center;
+        display: block;
+    }
+
+    .socialmedia {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .socialmedia .countryselect {
+        width: 150px;
+        height: 30px;
+        position: relative;
+        top: 0px;
+    }
+
+} 
