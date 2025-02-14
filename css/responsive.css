@@ -135,6 +135,11 @@
         height: 45px;
     }
 
+    .icon1, .icon2, .icon3, .icon4,
+    .icon5, .icon6, .icon7 {
+        animation: none;
+    }
+
     .section3 { display: block;}
 
     .blocktext { 
@@ -230,26 +235,20 @@
 
     input {width: 277px;}
 
-<<<<<<< HEAD
     .email {width: 589px;}
 
-=======
->>>>>>> dbee02d8661dc413a0bdecb11d59d56233dc7c2b
     textarea {width: 596px;}
 
     .privacycheck {
         width: 650px;
     }
 
-<<<<<<< HEAD
     a.privacygrey {    
         display: flex;
     }
 
     a.privacyblue {display: none;}
 
-=======
->>>>>>> dbee02d8661dc413a0bdecb11d59d56233dc7c2b
     .compcontact {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         width: 700px;
@@ -287,12 +286,6 @@
 
     }
 
-<<<<<<< HEAD
-
-    
-
-=======
->>>>>>> dbee02d8661dc413a0bdecb11d59d56233dc7c2b
 }
 
 @media screen and ( max-width:480px) {
@@ -319,11 +312,6 @@
         color: var(--gry);  
     }
 
-<<<<<<< HEAD
-=======
-   
-
->>>>>>> dbee02d8661dc413a0bdecb11d59d56233dc7c2b
     .nav-link a {
         margin-right: 0;
     }
@@ -345,12 +333,6 @@
         margin-right: 20px;
     }
 
-<<<<<<< HEAD
-
-    
-
-=======
->>>>>>> dbee02d8661dc413a0bdecb11d59d56233dc7c2b
     .brand {
         margin-left: 20px;
         max-width: 55%;
@@ -378,6 +360,12 @@
         background-position: center;
         background-repeat: no-repeat;
         height: 45px;
+    }
+
+    
+    .icon1, .icon2, .icon3, .icon4,
+    .icon5, .icon6, .icon7 {
+        animation: none;
     }
 
     .section2 { padding: var(--size-50) var(--size-10);}
@@ -497,44 +485,29 @@
     .hireform {
         width: 360px;
         margin: 50px 0;
-<<<<<<< HEAD
+
     }
 
     .email {width: 277px;}
-=======
-        }
->>>>>>> dbee02d8661dc413a0bdecb11d59d56233dc7c2b
 
     .privacycheck {
     width: 320px;
     }
 
-    textarea {
-<<<<<<< HEAD
-        width: 285px;
-    }
+    textarea {width: 285px;}
 
     a.privacygrey{ 
         display: flex;
         justify-content: space-around;
     }
 
-    a.privacyblue {
-=======
-        width: 320px;
-    }
+    a.privacyblue { width: 320px;}
 
-     a.privacyblue {
->>>>>>> dbee02d8661dc413a0bdecb11d59d56233dc7c2b
-        display: none;
+    a.privacyblue {display: none;
     }
 
     .compcontact {
-<<<<<<< HEAD
         width: 420px;
-=======
-         width: 420px;
->>>>>>> dbee02d8661dc413a0bdecb11d59d56233dc7c2b
         justify-items: center;
         text-align: center;
         display: block;
